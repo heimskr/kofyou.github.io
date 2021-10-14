@@ -18,7 +18,7 @@ title: Home
   
   I am taking *Compiler Design*, *Computer Networks* and *Research and Teaching in Computer Science and Engineering* for this fall quarter. I feel happy to learn with and from my professors and colleagues.
 
-  Also, I am looking for a 2021 summer internship.
+  Also, I am looking for a 2022 summer internship.
   
   Nice to meet you online!
   
