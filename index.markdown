@@ -16,7 +16,7 @@ title: Home
   "## Hello there!
   I am Mingsheng Xu from China. I am a first-year master's student majoring in Computer Science and Engineering at the University of California, Santa Cruz.
   
-  I am taking *Compiler Design*, *Computer Networks* and *Research and Teaching in Computer Science and Engineering* for this fall quarter. I feel happy to learn with and from my professors and colleagues.
+  I am taking *Compiler Design*, *Computer Networks* and *Research and Teaching in Computer Science and Engineering* for this fall quarter. I feel happy to learn with and from my colleagues and professors.
 
   Also, I am looking for a 2022 summer internship.
   
