@@ -23,9 +23,8 @@ title: Home
   Nice to meet you online!
   
   Email: <mxu61@ucsc.edu> \| LinkedIn: [Mingsheng Xu](https://www.linkedin.com/in/037466193/)
-  "" | markdownify
+  " | markdownify
   }}
-
   </div>
 
 </div>
