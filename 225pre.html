@@ -14684,7 +14684,7 @@ div.jp-OutputPrompt {
 </tbody>
 </table>
 <ul>
-<li>The easy way to encode <strong>5</strong> charactors needs <strong>3 bits</strong> for each.</li>
+<li>The easy way to encode <strong>5</strong> characters needs <strong>3 bits</strong> for each.</li>
 <li>The total text size would be <strong>3*(5+4+3+2+1) = 45</strong></li>
 </ul>
 
@@ -14698,7 +14698,7 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Solution:-Huffman-Encoding">Solution: Huffman Encoding<a class="anchor-link" href="#Solution:-Huffman-Encoding">&#182;</a></h3><p>Iteratively combine two least frequent charactors into a group.</p>
+<h3 id="Solution:-Huffman-Encoding">Solution: Huffman Encoding<a class="anchor-link" href="#Solution:-Huffman-Encoding">&#182;</a></h3><p>Iteratively combine two least frequent characters into a group.</p>
 <p><img src="huff1.PNG" style="width: 600px;"/></p>
 
 </div>
@@ -14982,7 +14982,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><strong>State Read</strong></p>
 <div class="highlight"><pre><span></span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">state</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">READ_ALPHABET</span><span class="p">)</span><span class="w"> </span><span class="k">begin</span><span class="w"></span>
-<span class="w">    </span><span class="c1">// if the charactor is valid</span>
+<span class="w">    </span><span class="c1">// if the character is valid</span>
 <span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">r_freq_1</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="mh">0</span><span class="p">)</span><span class="w"> </span><span class="k">begin</span><span class="w"></span>
 <span class="w">        </span><span class="c1">// store the addr into array</span>
 <span class="w">        </span><span class="n">heap_array</span><span class="p">[</span><span class="n">heap_index</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">alphabet_addr_counter</span><span class="p">;</span><span class="w"></span>
@@ -15322,11 +15322,11 @@ div.jp-OutputPrompt {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="How-does-hardware-implementation-differ?">How does hardware implementation differ?<a class="anchor-link" href="#How-does-hardware-implementation-differ?">&#182;</a></h2><ul>
-<li>Happens in parralel, while programming languages has sequential semantics<ul>
-<li>the swap of two register</li>
+<li>Happens in parralel, while programming languages have sequential semantics<ul>
+<li>the swap of two registers</li>
 </ul>
 </li>
-<li>Function calls and loops execute the same code -&gt; reuses of the same hardware resources<ul>
+<li>Function calls and loops execute the same code &rarr; reuse of the same hardware resources<ul>
 <li>call different function: switch the state</li>
 <li>recursive function call: pop/push stack, state remains</li>
 <li>loops: increment/decrement the counter, state remains</li>
