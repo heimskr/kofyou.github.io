@@ -14670,7 +14670,7 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Model-Introduction">Model Introduction<a class="anchor-link" href="#Model-Introduction">&#182;</a></h2><h3 id="Probelm">Probelm<a class="anchor-link" href="#Probelm">&#182;</a></h3><p>Given an input text, count different charcters and their frequency, come up with an encoding such that the text size is minimized.</p>
+<h2 id="Model-Introduction">Model Introduction<a class="anchor-link" href="#Model-Introduction">&#182;</a></h2><h3 id="Problem">Problem<a class="anchor-link" href="#Problem">&#182;</a></h3><p>Given an input text, count different characters and their frequencies and come up with an encoding such that the text size is minimized.</p>
 <h3 id="Example:-%2211110000-%3E%3E-111-=%22">Example: "11110000 &gt;&gt; 111 ="<a class="anchor-link" href="#Example:-%2211110000-%3E%3E-111-=%22">&#182;</a></h3><table>
 <thead><tr>
 <th>character</th>
@@ -14701,10 +14701,10 @@ div.jp-OutputPrompt {
 </tbody>
 </table>
 <ul>
-<li>The easy way to encode <strong>5</strong> charactors needs <strong>3 bits</strong> for each.</li>
+<li>The easy way to encode <strong>5</strong> characters needs <strong>3 bits</strong> for each.</li>
 <li>The total text size would be <strong>3*(5+4+3+2+1) = 45</strong></li>
 </ul>
-<p>*<em>This slide is taken from our CSE225 Presentation</em></p>
+<p>*<em>This slide is taken from our CSE225 presentation</em></p>
 
 </div>
 </div>
@@ -14716,9 +14716,9 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="Solution">Solution<a class="anchor-link" href="#Solution">&#182;</a></h3><p>Iteratively combine two least frequent charactors into a group.</p>
+<h3 id="Solution">Solution<a class="anchor-link" href="#Solution">&#182;</a></h3><p>Iteratively combine the two least frequent characters into a group.</p>
 <p><img src="huff1.PNG" style="width: 600px;"/></p>
-<p>*<em>This slide is taken from our CSE225 Presentation</em></p>
+<p>*<em>This slide is taken from our CSE225 presentation</em></p>
 
 </div>
 </div>
@@ -14731,7 +14731,7 @@ div.jp-OutputPrompt {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><img src="huff2.PNG" style="width: 600px;"/></p>
-<p>*<em>This slide is taken from our CSE225 Presentation</em></p>
+<p>*<em>This slide is taken from our CSE225 presentation</em></p>
 
 </div>
 </div>
@@ -14744,7 +14744,7 @@ div.jp-OutputPrompt {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p><img src="huff3.PNG" style="width: 650px;"/></p>
-<p>*<em>This slide is taken from our CSE225 Presentation</em></p>
+<p>*<em>This slide is taken from our CSE225 presentation</em></p>
 
 </div>
 </div>
@@ -14761,7 +14761,7 @@ div.jp-OutputPrompt {
 <ul>
 <li>2*5 + 2*4 + 2*3 + 3*2 + 3*1 = <strong>33</strong> &lt; 45</li>
 </ul>
-<p>*<em>This slide is taken from our CSE225 Presentation</em></p>
+<p>*<em>This slide is taken from our CSE225 presentation</em></p>
 
 </div>
 </div>
@@ -14776,8 +14776,8 @@ div.jp-OutputPrompt {
 <h3 id="Environment:-Huffman-Node-Memory">Environment: Huffman Node Memory<a class="anchor-link" href="#Environment:-Huffman-Node-Memory">&#182;</a></h3><p>Pre-populated with the characters and frequencies.</p>
 <ul>
 <li>The <strong><span style="color:blue">addr 0 in blue</span></strong> is reserved for denoting NULL</li>
-<li>The <strong><span style="color:red">addrs in red</span></strong> stores leaf nodes (the character-frequency pairs). Note that some tailing entries might be empty</li>
-<li>The <strong><span style="color:green">rest in green</span></strong> will store internal nodes. Note that some tailing entries might be empty</li>
+<li>The <strong><span style="color:red">addrs in red</span></strong> stores leaf nodes (the character-frequency pairs). Note that some trailing entries might be empty</li>
+<li>The <strong><span style="color:green">rest in green</span></strong> will store internal nodes. Note that some trailing entries might be empty</li>
 <li>The left/right addr encodes the tree</li>
 <li>Three read ports for same cycle access to parent and children</li>
 </ul>
@@ -14855,7 +14855,7 @@ div.jp-OutputPrompt {
 </tr>
 </tbody>
 </table>
-<p>*<em>This slide is taken from our CSE225 Presentation</em></p>
+<p>*<em>This slide is taken from our CSE225 presentation</em></p>
 
 </div>
 </div>
@@ -14874,7 +14874,7 @@ div.jp-OutputPrompt {
 </ul>
 <p><img src="CFSM.PNG" style="width: 500px;"/></p>
 <h3 id="Composition:-Memory-+-Constructor">Composition: Memory + Constructor<a class="anchor-link" href="#Composition:-Memory-+-Constructor">&#182;</a></h3><p>We compose the Node Memory with the Huffman Constructor into one system so there is no input.</p>
-<p>*<em>The diagram is taken from our CSE225 Presentation</em></p>
+<p>*<em>The diagram is taken from our CSE225 presentation</em></p>
 
 </div>
 </div>
@@ -14919,10 +14919,72 @@ div.jp-OutputPrompt {
 <h2 id="Verification">Verification<a class="anchor-link" href="#Verification">&#182;</a></h2><h3 id="Deterministic-Memory">Deterministic Memory<a class="anchor-link" href="#Deterministic-Memory">&#182;</a></h3><ul>
 <li>Fistly, we want to make sure that our model is correct</li>
 <li>We initialize the whole memory such that there is only one possible run</li>
-<li>We assert values at different state. If the assertion fails, UCLID5 prints out the counter examples</li>
+<li>We assert values at different state. If the assertion fails, UCLID5 prints out the counterexamples</li>
 <li>And we correct our model based on the counter example</li>
 </ul>
-<p>img of init and assertions, and bmc</p>
+<p><img src="./assets/nond.png" style="width: 500px;"/></p>
+
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+
+<pre><code>Successfully instantiated 2 module(s).
+33 assertions passed.
+0 assertions failed.
+0 assertions indeterminate.
+  PASSED -&gt; vobj [Step #0] property test_clk10_state @ ./constructor_clean.v, line 501
+  PASSED -&gt; vobj [Step #0] property test_clk10_index @ ./constructor_clean.v, line 503
+  PASSED -&gt; vobj [Step #0] property test_clk10_sub_state @ ./constructor_clean.v, line 502
+  PASSED -&gt; vobj [Step #1] property test_clk10_state @ ./constructor_clean.v, line 501
+  PASSED -&gt; vobj [Step #1] property test_clk10_index @ ./constructor_clean.v, line 503
+  PASSED -&gt; vobj [Step #1] property test_clk10_sub_state @ ./constructor_clean.v, line 502
+  ...
+  PASSED -&gt; vobj [Step #10] property test_clk10_state @ ./constructor_clean.v, line 501
+  PASSED -&gt; vobj [Step #10] property test_clk10_index @ ./constructor_clean.v, line 503
+  PASSED -&gt; vobj [Step #10] property test_clk10_sub_state @ ./constructor_clean.v, line 502
+Finished execution for module: constructor.</code></pre>
+
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+
+<pre><code>Successfully instantiated 2 module(s).
+CEX for vobj [Step #10] property test_clk10_state @ ./constructor_clean.v, line 501
+=================================
+Step #10
+  done : false
+  heap_array :
+        0 : 3
+        1 : 2
+        2 : 1
+        - : 0
+  heap_index : 0
+  heap_size : 3
+  smallest_heap_index : 0
+  state : BUILD_HUFFMAN
+=================================
+32 assertions passed.
+1 assertions failed.
+0 assertions indeterminate.
+  ...
+  PASSED -&gt; vobj [Step #10] property test_clk10_index @ ./constructor_clean.v, line 503
+  PASSED -&gt; vobj [Step #10] property test_clk10_sub_state @ ./constructor_clean.v, line 502
+  FAILED -&gt; vobj [Step #10] property test_clk10_state @ ./constructor_clean.v, line 501
+Finished execution for module: constructor.</code></pre>
 
 </div>
 </div>
@@ -14946,7 +15008,7 @@ div.jp-OutputPrompt {
 </ul>
 </li>
 </ul>
-<p>img of init</p>
+<p><img src="./assets/re_d_init.png" style="width: 700px;"/></p>
 
 </div>
 </div>
@@ -14958,7 +15020,7 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="What-Properties-Contribute-to-the-Correctness-of-the-system?">What Properties Contribute to the Correctness of the system?<a class="anchor-link" href="#What-Properties-Contribute-to-the-Correctness-of-the-system?">&#182;</a></h3><p>img of assertions</p>
+<h3 id="What-Properties-Contribute-to-the-Correctness-of-the-system?">What Properties Contribute to the Correctness of the system?<a class="anchor-link" href="#What-Properties-Contribute-to-the-Correctness-of-the-system?">&#182;</a></h3><p><img src="./assets/props.png" style="width: 600px;"/></p>
 
 </div>
 </div>
@@ -14972,8 +15034,8 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h3 id="Diameter-Analysis">Diameter Analysis<a class="anchor-link" href="#Diameter-Analysis">&#182;</a></h3><ul>
 <li>The algorithm always terminates and has an upper-bound for the run time.</li>
-<li>Given the initial memory size (number of characters), we can calculate the worst case run time.</li>
-<li>Therefore, as long as the steps are large enough, Bounded model checking suffices complete verification.</li>
+<li>Given the initial memory size (number of characters), we can calculate the worst-case run time.</li>
+<li>Therefore, as long as the steps are large enough, bounded model checking accomplishes complete verification.</li>
 </ul>
 <p>Assume the size of the alphabet is $n$</p>
 <ul>
@@ -14995,7 +15057,7 @@ div.jp-OutputPrompt {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Synthesis">Synthesis<a class="anchor-link" href="#Synthesis">&#182;</a></h2><p>UCLID5 uses cvc5 as the engine for function synthesis</p>
 <ul>
-<li>Provide the function signiture and the  specification to be met</li>
+<li>Provide the function signature and the specification to be met</li>
 <li>Does not seem to allow syntax information</li>
 </ul>
 
@@ -15009,7 +15071,7 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="The-Problem:-Synthesizing-the-Truth-table">The Problem: Synthesizing the Truth table<a class="anchor-link" href="#The-Problem:-Synthesizing-the-Truth-table">&#182;</a></h3><p>Minheapify: a function that maintains the order between the parent and children. If parent is larger than the children, need to replace the parent with the smallest value.</p>
+<h3 id="The-Problem:-Synthesizing-the-Truth-table">The Problem: Synthesizing the Truth table<a class="anchor-link" href="#The-Problem:-Synthesizing-the-Truth-table">&#182;</a></h3><p>Minheapify: a function that maintains the order between the parents and children. If the parent is larger than the children, we need to replace the parent with the smallest value.</p>
 <div class="highlight"><pre><span></span><span class="n">smallest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">parent</span><span class="p">;</span><span class="w"></span>
 
 <span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">left_child</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">smallest</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -15020,7 +15082,7 @@ div.jp-OutputPrompt {
 <span class="w">    </span><span class="n">smallest</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">right_child</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 
-<span class="k">return</span><span class="w"> </span><span class="n">smallest</span><span class="w"></span>
+<span class="k">return</span><span class="w"> </span><span class="n">smallest</span><span class="p">;</span><span class="w"></span>
 </pre></div>
 
 </div>
@@ -15033,7 +15095,7 @@ div.jp-OutputPrompt {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>For hardware implementation, we want to get the smallest value within a single cycle. Then we need to analyze case by case, and write down the whole "truth table".</p>
+<p>For the hardware implementation, we want to get the smallest value within a single cycle. Then we need to analyze case by case, and write down the whole "truth table."</p>
 <p><img src="eq.PNG" style="width: 200px;"/></p>
 <div class="highlight"><pre><span></span><span class="k">casez</span><span class="w"> </span><span class="p">({</span><span class="n">less1</span><span class="p">,</span><span class="w"> </span><span class="n">less2</span><span class="p">,</span><span class="w"> </span><span class="n">less3</span><span class="p">})</span><span class="w"></span>
 <span class="w">                    </span><span class="p">{</span><span class="mh">3</span><span class="mb">&#39;b000</span><span class="p">}</span><span class="o">:</span><span class="w"></span>
@@ -15050,7 +15112,7 @@ div.jp-OutputPrompt {
 <span class="w">                        </span><span class="n">smallest_heap_index</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0</span><span class="p">;</span><span class="w"></span>
 <span class="w">                </span><span class="k">endcase</span><span class="w"></span>
 </pre></div>
-<p>*<em>The diagram is taken from our CSE225 Presentation</em></p>
+<p>*<em>This diagram is taken from our CSE225 presentation</em></p>
 
 </div>
 </div>
@@ -15107,7 +15169,7 @@ val2) val1))))))))))</code></pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="What's-Next">What's Next<a class="anchor-link" href="#What's-Next">&#182;</a></h2>
+<h2 id="Conclusion-and-What's-Next">Conclusion and What's Next<a class="anchor-link" href="#Conclusion-and-What's-Next">&#182;</a></h2>
 </div>
 </div>
 </div>
